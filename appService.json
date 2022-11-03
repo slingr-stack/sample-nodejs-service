@@ -1,6 +1,6 @@
 {
-    "label": "Skeleton",
-    "name": "skeleton",
+    "label": "sample node service",
+    "name": "samplenode",
     "apiVersion": "v1",
     "internal": false,
     "configurationType": "GLOBAL",
