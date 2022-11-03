@@ -1,0 +1,26 @@
+{
+  "name": "sample-nodejs-service",
+  "version": "1.0.0",
+  "description": "Sample service to create Slingr services",
+  "main": "service.js",
+  "scripts": {
+    "start": "node service.js",
+    "startDev": "nodemon service.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slingr-stack/sample-nodejs-service"
+  },
+  "keywords": [
+    "slingr",
+    "sample",
+    "services"
+  ],
+  "dependencies": {
+    "slingr-services": "^0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
