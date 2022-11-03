@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
     "label": "sample node service",
     "name": "samplenode",
-=======
-    "label": "Sample",
-    "name": "sample",
->>>>>>> 73c61ed9b84c8ec43aa624ebf58a4d451a964be1
     "apiVersion": "v1",
     "internal": false,
     "configurationType": "GLOBAL",
