@@ -2,10 +2,10 @@
   "name": "sample-nodejs-service",
   "version": "1.0.0",
   "description": "Sample service to create Slingr services",
-  "main": "service.js",
+  "main": "appService.js",
   "scripts": {
-    "start": "node service.js",
-    "startDev": "nodemon service.js",
+    "start": "node appService.js",
+    "startDev": "nodemon appService.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
