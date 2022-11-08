@@ -11,7 +11,7 @@ const checkProxyStatus = async () => {
 
         console.log("err is:",err);
         console.log('----------ENV VARS ----------------');
-        console.log(JSON.stringify(...process.env));
+        console.log(JSON.stringify({...process.env}));
         console.log('------------------------------');
     }
 }

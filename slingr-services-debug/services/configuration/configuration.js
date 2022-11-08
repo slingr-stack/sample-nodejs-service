@@ -26,7 +26,7 @@ const {
 } = { ...process.env };
 
 console.log('----------ENV VARS ----------------');
-console.log(JSON.stringify(...process.env));
+console.log(JSON.stringify({...process.env}));
 console.log('------------------------------');
 const podId = _podId.length > 5 ? _podId.substring(_podId.length - 5) : _podId;
 const localDeployment = _localDeployment !== 'false' && !!_localDeployment;
