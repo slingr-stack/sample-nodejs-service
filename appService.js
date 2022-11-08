@@ -2,12 +2,13 @@
 //////////////////////////////////////////////
 //            Services SDK                  //
 //////////////////////////////////////////////
-const svc = require('slingr-services');
+const svc = require('./slingr-services-debug');
 //const endpoint = require('slingr-endpoints');
 //////////////////////////////////////////////
 //              Service Hooks              //
 //////////////////////////////////////////////
 svc.hooks.onSvcStart = () => {
+
     // the loggers, service properties, data stores, etc. are initialized at this point. the service is ready to be used.
     svc.logger.info('From Hook - Service has started');
     //svc.appLogger.info('From Hook - Service has started')
