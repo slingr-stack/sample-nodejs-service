@@ -14,8 +14,8 @@ const {
     _webservices_port: webServicesPort,
     _token: token,
     _profile: profile,
-    _svcs_services_api: svcsServicesApi,
-    USE_SSL: _useSsl,
+    _extension_broker_api: _extension_broker_api,
+    _useSsl: _useSsl,
     SSL_KEY: sslKey,
     SSL_CERT: sslCert,
     // System properties
@@ -25,9 +25,7 @@ const {
     _svc_config: _svc_config
 } = { ...process.env };
 
-console.log('----------ENV VARS ----------------');
-console.log(JSON.stringify({...process.env}));
-console.log('------------------------------');
+
 const podId = _podId.length > 5 ? _podId.substring(_podId.length - 5) : _podId;
 const localDeployment = _localDeployment !== 'false' && !!_localDeployment;
 const debug = _debug !== 'false' && !!_debug;
@@ -74,7 +72,7 @@ const settings = {
     token,
     maskedToken,
     profile,
-    svcsServicesApi,
+    _extension_broker_api,
     webhookUrl,
     useSsl,
     sslKey,
