@@ -8,11 +8,7 @@ const checkProxyStatus = async () => {
         let data = res.data;
         return data.proxy
     } catch (err) {
-
         console.log("err is:",err);
-        console.log('----------ENV VARS ----------------');
-        console.log(JSON.stringify({...process.env}));
-        console.log('------------------------------');
     }
 }
 
