@@ -52,7 +52,7 @@ if (cDomain) {
 const domain = cDomain.toLowerCase();
 const secondaryDomain = ((localDeployment ? 'http' : 'https') + '://' + domainBase + '/' + applicationName + '/' + environment).toLowerCase();
 
-const webhookUrl = domain + '/svcs/' + svcName;
+const webhookUrl = domain + '/services/' + svcName;
 
 const proto = useSsl ? 'https' : 'http';
 console.log('Configured service [' + svcName + ']: ' +

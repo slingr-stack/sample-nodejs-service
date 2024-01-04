@@ -154,7 +154,7 @@ svc.webServices.nameForYourWebService = {
 Given the above example, the following URL will be available and listening to requests:
 
 ```
-POST https://<yourAppName>.slingrs.io/<env>/svcs/<svcName>
+POST https://<yourAppName>.slingrs.io/<env>/services/<svcName>
 ```
 
 When that URL is called, the handler will be invoked.
@@ -292,7 +292,7 @@ _debug=true
 _local_deployment=true
 _base_domain=slingrs.io
 _webservices_port=10000
-_svcs_services_api=https://yourtestapp.slingrs.io/dev/svcs/proxy/api
+_svcs_services_api=https://yourtestapp.slingrs.io/dev/services/proxy/api
 _token=91833a8b-929f-4eab-b7b4-2383c10cd629
 _svc_config={}
 ```
@@ -312,7 +312,7 @@ _debug=true
 _local_deployment=true
 _base_domain=slingrs.io
 _webservices_port=10000
-_svcs_services_api=https://yourtestapp.slingrs.io/dev/svcs/proxy/api
+_svcs_services_api=https://yourtestapp.slingrs.io/dev/services/proxy/api
 _token=91833a8b-929f-4eab-b7b4-2383c10cd629
 _svc_config={"token":"123456"}
 ``` 
