@@ -1,5 +1,32 @@
-# Sample Service for Node.js
-This is a sample of an  that you can check to learn how the NodeJs framework for Slingr works. It has the basic structure of an service with some samples of  some common use cases.
+---
+title: Sample Node Service
+keywords: 
+last_updated: January 8, 2024
+tags: []
+summary: "Detailed description of Sample Node Service."
+---
+
+# Overview
+
+This is a sample of an that you can check to learn how the NodeJs framework for Slingr works. It has the basic structure of an service with some samples of some common use cases.
+
+
+# Javascript API
+
+The JavaScript API of the Sample Node Service has the example function:
+
+- **HTTP requests**
+
+## HTTP requests
+
+**Label:** Random number generator  
+**Name:** randomNumber  
+**Description:** Generates a random integer
+
+```
+var res = svc.samplenode.randomNumber({});
+log('res: '+JSON.stringify(res));
+```
 
 You can find more information about how to adjust it here:
 
