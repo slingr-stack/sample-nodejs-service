@@ -2,7 +2,7 @@
 //////////////////////////////////////////////
 //            Services SDK                  //
 //////////////////////////////////////////////
-const svc = require('./slingr-services-debug');
+const svc = require('slingr-services');
 //const endpoint = require('slingr-endpoints');
 //////////////////////////////////////////////
 //              Service Hooks              //
