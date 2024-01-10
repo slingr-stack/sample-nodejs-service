@@ -1,14 +1,14 @@
+/**********************
+ Dependencies
+ ***********************/
 
-//////////////////////////////////////////////
-//            Services SDK                  //
-//////////////////////////////////////////////
 const svc = require('slingr-services');
-//const endpoint = require('slingr-endpoints');
-//////////////////////////////////////////////
-//              Service Hooks              //
-//////////////////////////////////////////////
-svc.hooks.onSvcStart = () => {
 
+/**********************
+ Service Hooks Lifecycle
+ **********************/
+
+svc.hooks.onSvcStart = () => {
     // the loggers, service properties, data stores, etc. are initialized at this point. the service is ready to be used.
     svc.logger.info('From Hook - Service has started');
     //svc.appLogger.info('From Hook - Service has started')
@@ -19,9 +19,9 @@ svc.hooks.onSvcStop = (cause) => {
     //svc.appLogger.info('From Hook - Service is stopping.', cause);
 };
 
-//////////////////////////////////////////////
-//            Service Functions            //
-//////////////////////////////////////////////
+/**********************
+ Service Functions
+ **********************/
 
 //Functions receive a request parameter which has some info that the platform adds plus.
 //the arguments sent to the function
@@ -50,7 +50,7 @@ svc.functions.randomNumber = (req) => {
 
     //Functions should always return a valid JSON or object
     return responseToApp;
-}
+};
 
 svc.functions.findAndSaveDocument = (req) => {
     const document = req.params;
@@ -81,7 +81,7 @@ svc.functions.findAndSaveDocument = (req) => {
     }
 
     return { msg: 'ok' };
-}
+};
 
 svc.functions.ping = (req) => {
 
@@ -106,7 +106,7 @@ svc.functions.error = (req) => {
     svc.appLogger.warn('Request to generate error received');
 
     throw new Error('Error generated!');
-}
+};
 
 svc.functions.downloadFileFromSvc = (svcRequest) => {
     const file = svcRequest.params;
@@ -140,11 +140,12 @@ svc.functions.executeScript = (svcRequest) => {
 
     const res = svc.scripts.execute(scriptName, parameters);
     return {msg: 'Script ['+scriptName+'] will be executed shortly in a separate job',response: res};
-}
+};
 
-//////////////////////////////////////////////
-//          Service Web Services           //
-//////////////////////////////////////////////
+/**********************
+ Service Web Services
+ **********************/
+
 svc.webServices.webhooks = {
     method: 'POST',
     path: '/',
