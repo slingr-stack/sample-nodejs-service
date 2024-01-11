@@ -1,5 +1,5 @@
 {
-    "label": "sample node service",
+    "label": "Sample Node Service",
     "name": "samplenode",
     "apiVersion": "v1",
     "internal": false,
@@ -116,9 +116,6 @@
             "name": "executeScript",
             "description": "TBD"
         }
-    ],
-    "scripts":[
-        "helpers.js"
     ],
     "configuration":[
         {
