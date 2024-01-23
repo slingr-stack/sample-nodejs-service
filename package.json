@@ -18,7 +18,7 @@
     "services"
   ],
   "dependencies": {
-    "slingr-services": "^0.0.3"
+    "slingr-services": "^0.0.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
