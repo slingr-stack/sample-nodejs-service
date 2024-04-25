@@ -2,7 +2,7 @@
  Dependencies
  ***********************/
 
-const svc = require('slingr-services');
+const svc = require('@slingr/slingr-services');
 
 /**********************
  Service Hooks Lifecycle
